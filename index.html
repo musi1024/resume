@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>个人简历</title>
-    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="./loading.css">
     <link rel="stylesheet" href="./style.css">
     <script src="//at.alicdn.com/t/font_710247_kj3etrjlork.js"></script>
     <style type="text/css">
@@ -15,7 +15,7 @@
   </style>
   </head>
   <body>
-    <div id="welcome" class="welcome">
+    <div id="welcome" class="welcome active">
       <div class="loading"></div>
     </div>
     <div id="topNavBar" class="topNavBar ">
@@ -54,7 +54,7 @@
       <div class="mask"></div>
     </div>
     <main>
-      <div class="userCard" id="siteAbout">
+      <div class="userCard mainBlock" id="siteAbout">
         <div class="pictureAndText clearfix">
           <div class="picture">
             <img src="./img/avatar.jpg" alt="头像">
@@ -102,12 +102,12 @@
       </p>
 
       <p class="selfIntroduction">
-        游俊杰 前端小白 现在在 饥人谷 学习前端课程。<br>
+        游俊杰 前端小白<br>
         技能：前端开发
       </p>
 
     </main>
-    <section class="skills" id="siteSkill">
+    <section class="skills mainBlock" id="siteSkill">
       <h2>技能</h2>
       <ol class="clearfix">
         <li>
@@ -149,7 +149,7 @@
               
       </ol>
     </section>
-    <section class="portfolio" id="siteWorks">
+    <section class="portfolio mainBlock" id="siteWorks">
       <h2>作品集</h2>
       <nav>
         <ol class="clearfix">
@@ -184,6 +184,8 @@
         </div>
       </div>
     </section>
+    
     <script src="main.js"></script>
+    <script src="https://cdn.bootcss.com/tween.js/r14/Tween.min.js"></script>
   </body>
 </html>
