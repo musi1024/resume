@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>个人简历</title>
-    <link rel="stylesheet" href="./loading.css">
-    <link rel="stylesheet" href="./style.css">
+    <title>我的个人简历</title>
+    <!-- <link rel="stylesheet" href="./loading.css"> -->
     <script src="//at.alicdn.com/t/font_710247_kj3etrjlork.js"></script>
-    <style type="text/css">
-      .icon {
-         width: 1em; height: 1em;
-         vertical-align: -0.15em;
-         fill: currentColor;
-         overflow: hidden;
-      }
-  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <div id="welcome" class="welcome active">
@@ -145,47 +138,25 @@
           <div class="progressBar">
             <div class="progress" style="width: 60%"></div>
           </div>
-        </li>
-              
+        </li>       
       </ol>
     </section>
     <section class="portfolio mainBlock" id="siteWorks">
       <h2>作品集</h2>
-      <nav>
-        <ol class="clearfix">
-          <li id="portfolio1">所有</li>
-          <li id="portfolio2">框架</li>
-          <li id="portfolio3">原生JS&amp;CSS</li>
-        </ol>
-        <div id="portfolioBar" class="bar state-1">
-          <div class="bar-inner"></div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <img class="swiper-slide" src="img/slideshow.png" alt="">
+            <img class="swiper-slide" src="img/navpage.png" alt="">
+            <img class="swiper-slide" src="img/draw.png" alt="">
         </div>
-      </nav>
-      <script>
-        portfolio1.onclick = function() {
-          portfolioBar.className = 'bar state-1'
-        }
-        portfolio2.onclick = function() {
-          portfolioBar.className = 'bar state-2'
-        }
-        portfolio3.onclick = function() {
-          portfolioBar.className = 'bar state-3'
-        }
-      </script>
-      <div class="works">
-        <div class="big" style="top: 0px; left: 0px">
-          <img src="./img/1.jpg" alt="作品1">
-        </div>
-        <div class="small" style="top: 0px; left: 645px">
-            <img src="./img/2.jpg" alt="作品2">
-        </div>
-        <div class="small" style="top: 312px; left: 645px">
-            <img src="./img/3.jpg" alt="作品3">
-        </div>
+        <div class="swiper-pagination"></div> 
       </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </section>
     
-    <script src="main.js"></script>
     <script src="https://cdn.bootcss.com/tween.js/r14/Tween.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

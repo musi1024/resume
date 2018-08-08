@@ -10,6 +10,7 @@ for (let i = 0; i < mainBlock.length; i++) {
 setTimeout(function() {
   scrollAnimate()
 }, 2501)
+
 window.onscroll = function() {
   if (window.scrollY > 0) {
     topNavBar.classList.add("sticky")
@@ -17,7 +18,6 @@ window.onscroll = function() {
     topNavBar.classList.remove("sticky")
   }
   scrollAnimate()
-  
 }
 
 function scrollAnimate() {
@@ -82,15 +82,18 @@ for (let i = 0; i < aTags.length; i++) {
   }
 }
 
+var mySwiper = new Swiper ('.swiper-container', {
+  loop: true,
+  
+  // 如果需要分页器
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  
+  // 如果需要前进后退按钮
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-portfolio1.onclick = function() {
-  portfolioBar.className = 'bar state-1'
-}
-
-portfolio2.onclick = function() {
-  portfolioBar.className = 'bar state-2'
-}
-
-portfolio3.onclick = function() {
-  portfolioBar.className = 'bar state-3'
-}
+})
