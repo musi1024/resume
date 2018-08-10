@@ -6,10 +6,10 @@
     }
 
     // 初次打开页面是，板块上移
-    setTimeout(function() {
-        scrollAnimateAndRemoveOffset()
-        window.scrollTo(0,0)
-    },1400)
+    
+    scrollAnimateAndRemoveOffset()
+    // window.scrollTo(0,0)
+
 
 
     // 滚动时，板块上移
