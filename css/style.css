@@ -167,7 +167,7 @@ body {
 }
 
 .banner {
-    background-image: url(./img/rs-cover.jpg);
+    background-image: url(/img/rs-cover.jpg);
     height: 515px;
     background-position: center center;
     background-size: cover;

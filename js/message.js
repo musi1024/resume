@@ -11,14 +11,14 @@
             let query = new AV.Query('Message')
             return query.find()
         },
-        save: function() {
+        save: function(name, content) {
             var Message = AV.Object.extend('Message')
             var message = new Message()
             return message.save({
                 'name': name,
                 'content': content,
             })
-        },
+        }
     }
 
     var controller = {
@@ -52,9 +52,10 @@
                 this.saveMessage()
             })
         },
-        saveMessagex: function() {
+        saveMessage: function() {
             let myForm = this.form
             let content = myForm.querySelector('input[name=content]').value
+            console.log(myForm.querySelector('input[name=content]').value)
             let name = myForm.querySelector('input[name=name]').value
             this.model.save(name, content).then(
                 function(object) {
