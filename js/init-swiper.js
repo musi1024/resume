@@ -1,5 +1,5 @@
 !function() {
-  var view = document.querySelector('#siteWorks')
+  var view = View('#siteWorks')
   var controller = {
     view: null,
     swiper: null,
