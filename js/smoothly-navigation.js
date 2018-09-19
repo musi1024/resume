@@ -19,7 +19,7 @@
         scrollToElement: function(element) {
             let top = element.offsetTop
             let currrentTop = window.scrollY
-            let targetTop = top - 100
+            let targetTop = top - 120
             let s = targetTop - currrentTop
             var coords = { y: currrentTop }
             var t = Math.abs((s / 100) * 300 )
@@ -46,12 +46,14 @@
             }
             let aTags = document.querySelectorAll('nav.menu > ul > li > a')
             for (let i = 0; i < aTags.length; i++) {
-                aTags[i].onclick = (even) => {
-                    even.preventDefault()
-                    let e = even.currentTarget
-                    let href = e.getAttribute('href')
-                    let element = document.querySelector(href)
-                    this.scrollToElement(element)
+                if(aTags[i].href != 'https://www.zhihu.com/people/mu-si-95-37/posts') {
+                    aTags[i].onclick = (even) => {
+                        even.preventDefault()
+                        let e = even.currentTarget
+                        let href = e.getAttribute('href')
+                        let element = document.querySelector(href)
+                        this.scrollToElement(element)
+                    }
                 }
             }
         }

@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>我的个人简历</title>
-    <!-- <link rel="stylesheet" href="css/loading.css">
-    <script src="js/init-loading.js"></script> -->
+    <link rel="stylesheet" href="css/loading.css">
+    <script src="js/init-loading.js"></script>
     <script src="//at.alicdn.com/t/font_710247_kj3etrjlork.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,30 +15,16 @@
     <div id="topNavBar" class="topNavBar ">
       <div class="inner-topNavBar clearfix">
           <a class="logo" href="#" alt="logo">
-            <span class="rs">RS</span><span class="card">card</span>
+            <span class="rs">Y</span><span class="card">JJ</span>
           </a>
           <nav class="menu">
             <ul class="clearfix">
               <li><a href="#siteAbout">关于</a></li>
               <li><a href="#siteSkill">技能</a></li>
-              <li class="meneTigger">
-                <a href="#siteWorks">作品</a>
-                <ul class="submenu">
-                  <li>作品1</li>
-                  <li>作品2</li>
-                  <li>作品3</li>
-                </ul>
-              </li>
-              <li class="meneTigger">
-                <a href="#siteBlog">博客</a>
-                <ul class="submenu">
-                    <li>博客1</li>
-                    <li>博客2</li>
-                    <li>博客3</li>
-                </ul>
-              </li>
-              <li><a href="#">日历</a></li>
-              <li><a href="#">联系方式</a></li>
+              <li><a href="#siteWorks">作品</a></li>
+              <li><a href="https://www.zhihu.com/people/mu-si-95-37/posts">博客</a></li>
+              <li><a href="#siteMessage">留言</a></li>
+              <li><a href="#siteDownload">下载简历</a></li>
               <li><a href="#">其他</a></li>
             </ul>
           </nav>
@@ -54,51 +40,37 @@
             <img src="./img/avatar.jpg" alt="头像">
           </div>
           <div class="text clearfix">
-            <span class="hello">Hello
+            <span class="hello">你好，我想当一名前端工程师
               <span class="triangle"></span>
             </span>
            <h1>游俊杰</h1>
-           <p>前端开发工程师</p>
+           <p>熟悉 HTML5/CSS3/JavaScript/vue </p>
            <hr>
            <dl>
               <dt>年龄</dt>
-              <dd>18</dd>
+              <dd>23</dd>
               <dt>所在城市</dt>
               <dd>广州</dd>
               <dt>邮箱</dt>
               <dd>957028613@qq.com</dd>
               <dt>手机</dt>
-              <dd>1368xxxx687</dd>
+              <dd>136xxxx4687</dd>
             </dl>
           </div>      
         </div>
         <footer class="media">
-          <a href="#">
+          <a href="https://github.com/musi1024">
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-github"></use>
             </svg>
           </a>
-          <a href="#">
+          <a href="https://www.zhihu.com/people/mu-si-95-37/activities">
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-zhihu"></use>
             </svg>
           </a>
-          <a href="#">
-            <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-weibo"></use>
-            </svg>
-          </a>
         </footer>
       </div>
-
-      <p class="downloadResume-wrapper">
-        <a class="downloadResume" href="./resum515e.pdfa" target="_blank" download="">下载 PDF 简历</a>
-      </p>
-
-      <p class="selfIntroduction">
-        游俊杰 前端小白<br>
-        技能：前端开发
-      </p>
 
     </main>
     <section class="skills mainBlock" id="siteSkill">
@@ -155,7 +127,7 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </section>
-    <section class="message">
+    <section class="message" id="siteMessage">
       <h2>留言</h2>
       <ol id="messageList"></ol>
       <form id="postMessageForm" style="width: 700px; margin: 50px auto;">
@@ -166,6 +138,11 @@
         <input type="submit" value="提交">
       </form>
     </section>
+    <section class="download mainBlock" id="siteDownload">
+      <p class="downloadResume-wrapper">
+        <a class="downloadResume" href="./resum515e.pdfa" target="_blank" download="">下载 PDF 简历</a>
+      </p>
+    </section>
     
     <script src="https://cdn.bootcss.com/tween.js/r14/Tween.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
@@ -175,7 +152,7 @@
     <script src="js/base/Model.js"></script>
     <script src="js/base/Controller.js"></script>
     <script src="js/init-swiper.js"></script>
-    <script src="js/auto-slide-up.js"></script>
+    <!-- <script src="js/auto-slide-up.js"></script> -->
     <script src="js/sticky-topbar.js"></script>
     <script src="js/smoothly-navigation.js"></script>
     <script src="js/message.js"></script>
