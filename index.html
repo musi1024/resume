@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>我的个人简历</title>
-    <link rel="stylesheet" href="css/loading.css">
+    <!-- <link rel="stylesheet" href="css/loading.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -77,16 +77,22 @@
     </section>
     <section class="portfolio mainBlock" id="siteWorks">
       <h2>作品集</h2>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <img class="swiper-slide" src="img/slideshow.png" alt="">
-            <img class="swiper-slide" src="img/navpage.png" alt="">
-            <img class="swiper-slide" src="img/draw.png" alt="">
-        </div>
-        <div class="swiper-pagination"></div> 
-      </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="projects">
+        <ol>
+          <li>
+            <div class="project" style="background-image:url('img/slideshow.png')"></div>
+            <p>关键字</p>
+          </li>
+          <li>
+            <div class="project" style="background-image:url('img/navpage.png')"></div>
+            <p>关键字</p>
+          </li>
+          <li>
+            <div class="project" style="background-image:url('img/draw.png')"></div>
+            <p>关键字</p>
+          </li>
+        </ol>
+      </div>  
     </section>
     <section class="message mainBlock" id="siteMessage">
       <h2>留言</h2>
@@ -111,7 +117,7 @@
     <script src="js/echarts.min.js"></script>
     <script src="//at.alicdn.com/t/font_710247_kj3etrjlork.js"></script>
 
-    <script src="js/init-loading.js"></script>
+    <!-- <script src="js/init-loading.js"></script> -->
     <script src="js/base/View.js"></script>
     <script src="js/base/Model.js"></script>
     <script src="js/base/Controller.js"></script>
