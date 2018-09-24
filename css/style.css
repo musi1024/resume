@@ -294,8 +294,8 @@ section.skills > #skillRadar {
 
 .projects > ol {
     display: flex;
-    flex-wrap: nowrap;
-    margin: 0 38px;
+    flex-wrap: wrap;
+    margin: 0 28px;
 }
 
 .projects > ol > li {
@@ -323,17 +323,36 @@ section.skills > #skillRadar {
     margin: 24px 24px 12px 24px;
     font-size: 15px;
     font-weight: bold;
-}
+}   
 
 .projects li > .project-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    background: #F63A7A;
-    box-shadow: 0px 0px 97px 7px rgba(245,142,178,0.5);
+    background: #509aaf;
+    box-shadow: 0px 0px 150px -25px rgba(80,154,175,1);
     border-radius: 200px;
     width: 52px;
     height: 36px;
-    left: 215px;
+    left: 220px;
     top: 33px;
+}
+
+.projects li > .project-view:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 12px 0px rgba(74,148,168,1);
+}
+
+.projects li > .project-view:active {
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px rgba(74,148,168,1);
+}
+
+.project-view .icon {
+    width: 60%; height: 60%;
+    fill: white;
+    overflow: hidden;
 }
 
 section.message > ol {
