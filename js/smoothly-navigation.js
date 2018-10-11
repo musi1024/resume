@@ -1,40 +1,44 @@
-!function() {
+! function () {
     var view = View('nav.menu')
     var controller = {
         view: null,
         liTags: null,
         aTags: null,
-        init: function(view) {
+        init: function (view) {
             this.view = view
             this.initAnimate()
             this.bindEvents()
         },
-        initAnimate: function() {
+        initAnimate: function () {
             function animate(time) {
                 requestAnimationFrame(animate);
                 TWEEN.update(time);
             }
             requestAnimationFrame(animate);
         },
-        scrollToElement: function(element) {
+        scrollToElement: function (element) {
             let top = element.offsetTop
             let currrentTop = window.scrollY
             let targetTop = top - 120
             let s = targetTop - currrentTop
-            var coords = { y: currrentTop }
-            var t = Math.abs((s / 100) * 300 )
+            var coords = {
+                y: currrentTop
+            }
+            var t = Math.abs((s / 100) * 300)
             if (t > 500) {
                 t = 500
             }
-            var tween = new TWEEN.Tween(coords) 
-            .to({ y: targetTop }, t)
-            .easing(TWEEN.Easing.Quadratic.InOut) 
-            .onUpdate(function() { 
-                window.scrollTo(0, coords.y)
-            })
-            .start()
+            var tween = new TWEEN.Tween(coords)
+                .to({
+                    y: targetTop
+                }, t)
+                .easing(TWEEN.Easing.Quadratic.InOut)
+                .onUpdate(function () {
+                    window.scrollTo(0, coords.y)
+                })
+                .start()
         },
-        bindEvents: function() {
+        bindEvents: function () {
             let liTags = document.querySelectorAll('nav.menu > ul > li')
             for (let i = 0; i < liTags.length; i++) {
                 liTags[i].onmouseenter = (even) => {
@@ -46,7 +50,8 @@
             }
             let aTags = document.querySelectorAll('nav.menu > ul > li > a')
             for (let i = 0; i < aTags.length; i++) {
-                if(aTags[i].href != 'https://www.zhihu.com/people/mu-si-95-37/posts') {
+                if (aTags[i].href != 'https://www.zhihu.com/people/mu-si-95-37/posts') {
+                    console.log(aTags[i])
                     aTags[i].onclick = (even) => {
                         even.preventDefault()
                         let e = even.currentTarget
@@ -60,4 +65,3 @@
     }
     controller.init(view)
 }.call()
-
