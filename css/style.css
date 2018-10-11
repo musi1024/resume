@@ -319,10 +319,14 @@ section.skills > #skillRadar {
     border-top-right-radius: 10px;
 }
 
+.projects li > h3 {
+    margin: 4px 20px;
+    font-weight: bold;  
+}
+
 .projects li > p {
-    margin: 24px 24px 12px 24px;
-    font-size: 15px;
-    font-weight: bold;
+    margin: 8px 20px;
+    font-size: 14px;
 }   
 
 .projects li > .project-view {
